@@ -1,0 +1,1 @@
+EstadoExcluir
