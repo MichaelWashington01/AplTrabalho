@@ -47,3 +47,20 @@ INSERT into cidade(nomecidade,situacao,idestado) VALUES ('Jales','A',1);
 
 
 select*from cidade;
+
+
+create table despesa (
+ 
+	iddespesa serial primary key,
+	descricao varchar (100),
+	datadocumento date not null,
+	valordespesa numeric (15,2) not null,
+	valorpago numeric (15,2),
+	imagemdocumento varchar
+);
+
+
+insert into despesa(descricao, datadocumento, valordespesa, valorpago)
+   values ('descricao', '2023-08-21', 20.5, 10.5);
+   
+   select * from despesa;
